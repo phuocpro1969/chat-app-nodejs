@@ -1,0 +1,107 @@
+{
+    "lib": [
+        "ES2022",
+    ],
+    "compilerOptions": {
+        "module": "NodeNext",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "target": "ES2022",
+        "moduleResolution": "NodeNext",
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "strict": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "strictPropertyInitialization": false,
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "src/*"
+            ],
+            "~root/*": [
+                "./*"
+            ],
+            "~configs": [
+                "src/configs"
+            ],
+            "~configs/*": [
+                "src/configs/*"
+            ],
+            "~entities": [
+                "src/dbs/entities",
+            ],
+            "~entities/*": [
+                "src/dbs/entities/*",
+            ],
+            "~utils": [
+                "src/utils"
+            ],
+            "~utils/*": [
+                "src/utils/*"
+            ],
+            "~constants": [
+                "src/utils/constants"
+            ],
+            "~constants/*": [
+                "src/utils/constants/*"
+            ],
+            "~enums": [
+                "src/utils/enums"
+            ],
+            "~enums/*": [
+                "src/utils/enums/*"
+            ],
+            "~helpers": [
+                "src/utils/helpers"
+            ],
+            "~helpers/*": [
+                "src/utils/helpers/*"
+            ],
+            "~dbs": [
+                "src/dbs"
+            ],
+            "~dbs/*": [
+                "src/dbs/*"
+            ],
+            "~firebase": [
+                "src/utils/third-parties/firebase"
+            ],
+            "~firebase/*": [
+                "src/utils/third-parties/firebase/*"
+            ],
+            "~sockets": [
+                "src/sockets"
+            ],
+            "~sockets/*": [
+                "src/sockets/*"
+            ],
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "ts-node": {
+        // "swc": true,
+        "esm": true,
+        "require": [
+            "tsconfig-paths/register"
+        ]
+    }
+}
